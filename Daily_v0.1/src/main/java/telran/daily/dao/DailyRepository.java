@@ -1,5 +1,9 @@
 package telran.daily.dao;
 
-public interface DailyRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import telran.daily.model.Task;
+
+public interface DailyRepository extends JpaRepository<Task, Long> {
 	
 }
