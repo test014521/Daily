@@ -13,6 +13,7 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -21,6 +22,7 @@ import lombok.Setter;
 @EqualsAndHashCode(of = "id")
 @Entity
 @Table(name = "tasks")
+@ToString
 public class Task implements Serializable {
 	/**
 	 * 
@@ -28,7 +30,7 @@ public class Task implements Serializable {
 	private static final long serialVersionUID = -8945725647185009967L;
 	@Id
 	Long id;
-	String title;
+	private String title;
 	String description;
 	LocalDateTime completedDate;
 	LocalDateTime createdDateTime;

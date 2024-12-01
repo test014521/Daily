@@ -12,7 +12,7 @@ import lombok.ToString;
 @ToString
 @Getter
 public class TaskDto {
-	String title;
+	String titlE;
     String description;
     @JsonProperty("completed date")
     String completedDate;    
