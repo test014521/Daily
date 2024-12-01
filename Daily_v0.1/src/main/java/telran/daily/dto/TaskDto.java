@@ -15,7 +15,5 @@ public class TaskDto {
 	String title;
     String description;
     @JsonProperty("completed date")
-    String completedDate;
-    
-    
+    String completedDate;    
 }
